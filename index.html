@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&B Hotel Hannover-Lahe | Azubi Frühstücks-Special</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7));
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Hero Section -->
+    <header class="relative h-[80vh] flex items-center justify-center text-white overflow-hidden">
+        <!-- Background Image (1.jpg) -->
+        <div class="absolute inset-0 z-0">
+            <img src="../1.jpg" alt="B&B Hotel Breakfast" class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <span class="inline-block py-1 px-3 rounded-full bg-green-500 text-white text-sm font-bold tracking-wider mb-4 uppercase">Exklusiv für Azubis</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                Der beste Start<br>in deinen Tag
+            </h1>
+            <p class="text-xl md:text-2xl font-light mb-8 text-gray-200">
+                B&B Hotel Hannover-Lahe
+            </p>
+            <a href="#offer" class="bg-white text-gray-900 hover:bg-gray-200 font-bold py-4 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg">
+                Zum Angebot
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Offer Section -->
+    <section id="offer" class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Azubi-Special</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Du machst eine Ausbildung? Wir haben das perfekte Angebot für dich und deine Freunde.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Breakfast Offer -->
+                <div class="bg-green-50 rounded-3xl p-8 md:p-12 border border-green-100 flex flex-col justify-between shadow-sm hover:shadow-md transition">
+                    <div>
+                        <div class="w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center text-white text-3xl mb-6">☕</div>
+                        <h3 class="text-2xl font-bold mb-2">2 für 1 Frühstück</h3>
+                        <p class="text-gray-600 mb-6">Bring einen Freund oder Kollegen mit und zahlt nur einmal.</p>
+                    </div>
+                    <div class="mt-4">
+                        <span class="text-4xl font-bold text-green-600">13,90 €</span>
+                        <span class="text-gray-500 ml-2">für zwei Personen</span>
+                    </div>
+                </div>
+
+                <!-- Stay Offer -->
+                <div class="bg-blue-50 rounded-3xl p-8 md:p-12 border border-blue-100 flex flex-col justify-between shadow-sm hover:shadow-md transition">
+                    <div>
+                        <div class="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center text-white text-3xl mb-6">🛏️</div>
+                        <h3 class="text-2xl font-bold mb-2">Übernachtung</h3>
+                        <p class="text-gray-600 mb-6">Brauchst du eine Auszeit oder eine Unterkunft?</p>
+                    </div>
+                    <div class="mt-4">
+                        <span class="text-4xl font-bold text-blue-600">-20%</span>
+                        <span class="text-gray-500 ml-2">Rabatt auf die Rate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid (Images 2, 3, 4, 5) -->
+    <section class="py-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="aspect-square rounded-xl overflow-hidden shadow-md">
+                    <img src="../2.jpg" alt="Frühstück Detail" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                </div>
+                <div class="aspect-square rounded-xl overflow-hidden shadow-md">
+                    <img src="../3.jpg" alt="Frühstück Auswahl" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                </div>
+                <div class="aspect-square rounded-xl overflow-hidden shadow-md">
+                    <img src="../4.jpg" alt="Frühstück Atmosphäre" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                </div>
+                <div class="aspect-square rounded-xl overflow-hidden shadow-md">
+                    <img src="../5.jpg" alt="Hotel Interior" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="py-20 px-4">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Unser Frühstücksbuffet</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-sm">
+                
+                <!-- Category: Dairy & Bio -->
+                <div class="space-y-4">
+                    <h3 class="font-bold text-lg text-green-700 border-b pb-2">Bio & Molkerei</h3>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>Haferdrink vegan</li>
+                        <li>Bio H-Milch</li>
+                        <li>Bio Butter</li>
+                        <li>Bio Joghurt (Mild, Vanille, Himbeere, Mango)</li>
+                        <li>Haferjoghurt Natur</li>
+                        <li>Frischkäse Natur</li>
+                        <li>Natura Bio Emmentaler</li>
+                        <li>Bio Gouda</li>
+                        <li>Limburger</li>
+                    </ul>
+                </div>
+
+                <!-- Category: Bakery & Spreads -->
+                <div class="space-y-4">
+                    <h3 class="font-bold text-lg text-yellow-700 border-b pb-2">Bäckerei & Aufstrich</h3>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>Buttertoast & Vollkorntoast</li>
+                        <li>Verschiedene Brötchen</li>
+                        <li>Erdnusscreme</li>
+                        <li>Nougatcreme</li>
+                        <li>Müsli</li>
+                        <li>Waffelschalen</li>
+                    </ul>
+                </div>
+
+                <!-- Category: Fresh & Fruits -->
+                <div class="space-y-4">
+                    <h3 class="font-bold text-lg text-red-700 border-b pb-2">Frisch & Fruchtig</h3>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>Äpfel, Birnen, Kiwi</li>
+                        <li>Orangen, Bananen</li>
+                        <li>Frischer Obstsalat</li>
+                        <li>Gurken, Tomaten, Radieschen</li>
+                        <li>Bananenchips, Cranberries</li>
+                        <li>Kürbiskerne</li>
+                    </ul>
+                </div>
+
+                <!-- Category: Hearty -->
+                <div class="space-y-4">
+                    <h3 class="font-bold text-lg text-orange-700 border-b pb-2">Herzhaftes</h3>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>Gekochte Eier</li>
+                        <li>Leberwurst</li>
+                        <li>Bierschinken</li>
+                        <li>Salami & Geflügelsalami</li>
+                        <li>Putenbrust</li>
+                        <li>Hummus classic</li>
+                        <li>Cornichons</li>
+                    </ul>
+                </div>
+
+                <!-- Category: Drinks -->
+                <div class="space-y-4">
+                    <h3 class="font-bold text-lg text-blue-700 border-b pb-2">Getränke</h3>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>Earl Grey, Green Tea</li>
+                        <li>English Breakfast Tea</li>
+                        <li>Camellie, Pfefferminze</li>
+                        <li>Erdbeertee</li>
+                        <li>Apfelsaft, Orangensaft</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h3 class="text-2xl font-bold mb-4">B&B Hotel Hannover-Lahe</h3>
+                <p class="text-gray-400 mb-6">
+                    Rendsburger Str. 8<br>
+                    30659 Hannover<br>
+                    Deutschland
+                </p>
+                <a href="https://www.google.com/maps/search/?api=1&query=B%26B+Hotel+Hannover-Lahe+Rendsburger+Str.+8+30659+Hannover" target="_blank" class="inline-flex items-center text-green-400 hover:text-green-300">
+                    <span>Auf Google Maps anzeigen</span>
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                </a>
+            </div>
+            <div class="h-64 rounded-xl overflow-hidden bg-gray-800">
+                <img src="../6.jpg" alt="B&B Hotel Hannover-Lahe" class="w-full h-full object-cover">
+            </div>
+        </div>
+        <div class="text-center text-gray-600 text-sm mt-12 pt-8 border-t border-gray-800">
+            &copy; 2026 B&B Hotel Hannover-Lahe. Alle Rechte vorbehalten.
+        </div>
+    </footer>
+
+</body>
+</html>
